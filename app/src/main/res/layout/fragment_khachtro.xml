@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTieuDe"
+        android:layout_width="179dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="17dp"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:text="Phòng"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/add_ten"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="Tên khách trọ"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTieuDe" />
+
+    <EditText
+        android:id="@+id/editTextDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@drawable/add_diachi"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="Địa chỉ"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCmtnd" />
+
+    <Button
+        android:id="@+id/buttonThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Cập nhật"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGhiChu" />
+
+    <EditText
+        android:id="@+id/editGhiChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@drawable/add_ghichu"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="Ghi chú thêm"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDiaChi" />
+
+
+    <Button
+        android:id="@+id/buttonXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Xóa"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTrove"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/buttonThem"
+        app:layout_constraintTop_toBottomOf="@+id/editGhiChu" />
+
+    <EditText
+        android:id="@+id/editTextSdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@drawable/ic_add_sdt"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="SĐT"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTen" />
+
+    <EditText
+        android:id="@+id/editTextCmtnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_add_socmtnd"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="Số CMTND"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSdt" />
+
+    <EditText
+        android:id="@+id/editidkhach"
+        android:layout_width="106dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonThem"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonTrove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="Trở Về"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGhiChu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

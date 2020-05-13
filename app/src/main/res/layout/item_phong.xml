@@ -1,0 +1,127 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:layout_margin="5dp"
+    android:background="#000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPhong"
+            android:layout_width="71dp"
+            android:layout_height="79dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_phong" />
+
+        <TextView
+            android:id="@+id/txtTenPhong"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="Phòng A1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtGiaPhong"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTenPhong"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="550000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="44dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_edit" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/imgPhong"
+            android:layout_toRightOf="@+id/imgPhong"
+            android:text="Tên phòng"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/imgPhong"
+            android:layout_toRightOf="@+id/imgPhong"
+            android:text="Giá phòng:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginStart="-71dp"
+            android:layout_marginLeft="-71dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/imgPhong"
+            android:layout_toRightOf="@+id/imgPhong"
+            android:text="Mô tả"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtMoTa"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGiaPhong"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="Mô tả:"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

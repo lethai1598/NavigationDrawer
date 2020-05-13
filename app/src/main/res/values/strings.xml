@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QL Phòng Trọ</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_header_title">QL Phòng Trọ</string>
+    <string name="nav_header_subtitle">Version 1.0 Beta</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
